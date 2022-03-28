@@ -78,3 +78,21 @@ h6 span {
 .checkbox:checked + label::before {
   transform: translateX(44px) rotate(-270deg);
 }
+
+.card-3d-wrapper {
+  background-color: #333;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.card-child {
+  background-color: #333;
+  padding: 5%;
+  position: absolute;
+  backface-visibility: hidden;
+  margin: 0 auto;
+}
+.card-back {
+  transform: rotateX(180deg);
+}
